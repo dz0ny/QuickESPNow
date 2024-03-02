@@ -43,7 +43,7 @@ bool QuickEspNow::begin (uint8_t channel, uint32_t wifi_interface, bool synchron
     }
     setChannel (channel, ch2);
 
-    DEBUG_INFO (QESPNOW_TAG, ARDUHAL_LOG_COLOR (ARDUHAL_LOG_COLOR_RED) "Starting ESP-NOW in in channel %u interface %s", channel, wifi_if == WIFI_IF_STA ? "STA" : "AP");
+    //DEBUG_INFO (QESPNOW_TAG, ARDUHAL_LOG_COLOR (ARDUHAL_LOG_COLOR_RED) "Starting ESP-NOW in in channel %u interface %s", channel, wifi_if == WIFI_IF_STA ? "STA" : "AP");
 
     this->channel = channel;
     initComms ();
